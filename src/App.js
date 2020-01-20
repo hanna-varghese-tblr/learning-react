@@ -1,23 +1,23 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
+import FirstComponent from './FirstComponent';
+import ThirdComponent from './ThirdComponent';
+import Friends from './Friends';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        <h2>Hello World :)</h2>
+        <h3>Last viewed time {new Date().toLocaleTimeString()}</h3>
+        
+        <Friends></Friends>
+        <FirstComponent passedData="this is the data passed from app js file." ></FirstComponent>
+        <ThirdComponent passedData="this is the data passed from app js file to third component" ></ThirdComponent>
       </header>
     </div>
   );
