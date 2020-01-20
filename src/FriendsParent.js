@@ -1,25 +1,23 @@
 import React ,{Component} from 'react';
+import ShowList from './ShowList';
 
 export default class FriendsParent extends Component
 {
     constructor(props)
     {
+        super(props)
         this.state={
             name:'Hanna Varghese',
             friendsList:['Vishnu','Sam','Jesty']
         }
-        this.handleFriends=this.handleFriends.bind(this);
     }
-    handleFriends(e)
-    {
-
-    }
+  
     render(){
-        return( 
+        return (
             <div className="comptext">
-                <h3>Binding,Events And Listing</h3>
-                 <h4>Add your new friend below :</h4>
-                <input type="text" value={this.state.name} onChange={this.handleFriends}></input>
+                 <h3>Binding And Listing</h3>
+                 <h5>Name : {this.state.name}</h5>
+                 <ShowList names={this.state.friendsList}></ShowList>
             </div>
         )
     }
