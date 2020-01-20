@@ -1,6 +1,6 @@
 import React ,{Component} from 'react';
 import ShowList from './ShowList';
-
+import './Common.css';
 export default class FriendsParent extends Component
 {
     constructor(props)

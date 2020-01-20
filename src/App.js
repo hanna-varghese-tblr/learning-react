@@ -6,6 +6,7 @@ import FirstComponent from './FirstComponent';
 import ThirdComponent from './ThirdComponent';
 import Friends from './Friends';
 import FriendsParent from './FriendsParent';
+import AddFriend from './AddFriend';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         
         <h2>Hello World :)</h2>
         <h3>Last viewed time {new Date().toLocaleTimeString()}</h3>
+        <AddFriend></AddFriend>
         <FriendsParent></FriendsParent>
         <Friends></Friends>
         <FirstComponent passedData="this is the data passed from app js file." ></FirstComponent>
